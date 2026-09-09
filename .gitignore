@@ -1,0 +1,10 @@
+.DS_Store
+.omx/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+evals/output/
+temp/
+*.log

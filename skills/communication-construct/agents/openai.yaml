@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Construct"
+  short_description: "Construct existence checks, disambiguation, and definition locks"
+  default_prompt: "Use $communication-construct to check whether this construct already exists, disambiguate its neighbors, and lock a stable definition."

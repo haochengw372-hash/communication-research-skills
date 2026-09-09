@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Scale"
+  short_description: "Scale location, validation, and cross-cultural adaptation"
+  default_prompt: "Use $communication-scale to locate a validated scale for this construct and plan reliability, CFA, and invariance checks for the target sample."

@@ -1,0 +1,13 @@
+name: <University Name>
+homepage: <library homepage URL>
+sso_type: ezproxy
+resources:
+  - <resource one, e.g. EBSCOhost>
+  - <resource two, e.g. SAGE Journals>
+auth_flow: >
+  The library authenticates the user through the institutional SSO, then the
+  EZproxy service represents the user to publishers. The agent never stores
+  credentials; missing sessions return AUTH_REQUIRED for a user login.
+notes: >
+  Copy this file to institutions/<slug>.yaml and replace placeholders.
+  Keep the resource list in sync with the library's database navigation.

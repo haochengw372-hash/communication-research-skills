@@ -1,0 +1,21 @@
+name: Communication University of China
+homepage: https://lib.cuc.edu.cn
+sso_type: university-sso
+resources:
+  - CNKI (中国知网)
+  - Wanfang Data (万方)
+  - EBSCOhost
+  - Web of Science
+  - SAGE Journals
+  - Taylor & Francis Online
+  - 超星发现 (cross-database discovery and delivery)
+  - 百链 (document delivery)
+auth_flow: >
+  User authenticates through the university unified authentication page with
+  account login, verification code, or QR code. An authenticated session is
+  retained for about seven days. The agent never stores credentials; when the
+  session is missing it returns AUTH_REQUIRED and asks the user to log in.
+notes: >
+  Resource coverage changes with subscription terms. Confirm current coverage
+  on the library database navigation page before assuming an item is eligible.
+  Respect bulk-download limits on each provider.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Reviewer"
+  short_description: "Seven-gate review and audit of communication research"
+  default_prompt: "Use $communication-reviewer to review this communication manuscript or proposal through the seven gates and return evidence-located verdicts."

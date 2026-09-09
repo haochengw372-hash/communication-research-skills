@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Content Analysis"
+  short_description: "Corpus, codebook, LLM/human coding, reliability, validation"
+  default_prompt: "Use $communication-content-analysis to plan this content-analysis study with a corpus contract, codebook, reliability protocol, and validation plan."

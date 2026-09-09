@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Causal Inference"
+  short_description: "Estimands, DAGs, quasi-experiments, diagnostics, sensitivity"
+  default_prompt: "Use $communication-causal-inference to define the estimand, select and audit the identification strategy, and bound this communication causal claim."

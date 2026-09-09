@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Literature"
+  short_description: "Search, screen, and map communication literature evidence"
+  default_prompt: "Use $communication-literature to build a reproducible search log, screening rules, and claim-oriented evidence matrix for this topic."

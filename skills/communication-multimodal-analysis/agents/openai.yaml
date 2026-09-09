@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Multimodal Analysis"
+  short_description: "Image, video, audio, OCR/ASR, vision models, multimodal validity"
+  default_prompt: "Use $communication-multimodal-analysis to define the media units, extraction pipeline, human validation, modality loss, and claim boundaries."

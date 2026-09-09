@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Network Analysis"
+  short_description: "Graph contracts, diffusion, communities, ERGM, and SAOM"
+  default_prompt: "Use $communication-network-analysis to define this communication network, choose the relational method, audit missingness, and bound diffusion or influence claims."

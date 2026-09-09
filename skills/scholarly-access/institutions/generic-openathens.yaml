@@ -1,0 +1,13 @@
+name: <University Name>
+homepage: <library homepage URL>
+sso_type: openathens
+resources:
+  - <resource one>
+  - <resource two>
+auth_flow: >
+  The publisher redirects to the university OpenAthens login, where the user
+  authenticates with the institutional account. The agent never stores
+  credentials; missing sessions return AUTH_REQUIRED for a user login.
+notes: >
+  Copy this file to institutions/<slug>.yaml and replace placeholders.
+  OpenAthens usually covers many publishers with one institutional login.

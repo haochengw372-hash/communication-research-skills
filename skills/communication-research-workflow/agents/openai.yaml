@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Research Workflow"
+  short_description: "Orchestrate and audit rigorous communication research workflows"
+  default_prompt: "Use $communication-research-workflow to plan this communication research project, propose stage-specific windows, route communication specialist Skills, and enforce theory-construct-measurement-evidence gates."

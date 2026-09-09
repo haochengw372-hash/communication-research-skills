@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Experiment"
+  short_description: "Survey, online, and HMC experiment design"
+  default_prompt: "Use $communication-experiment to design this communication experiment with clean conditions, manipulation checks, power, and a preregistrable protocol."

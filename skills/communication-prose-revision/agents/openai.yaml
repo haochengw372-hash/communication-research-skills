@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Prose Revision"
+  short_description: "Reduce formulaic and defensive social-science prose safely"
+  default_prompt: "Use $communication-prose-revision to make this communication manuscript more direct and natural while preserving evidence, uncertainty, terminology, citations, and causal boundaries."

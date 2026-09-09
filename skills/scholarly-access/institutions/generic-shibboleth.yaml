@@ -1,0 +1,14 @@
+name: <University Name>
+homepage: <library homepage URL>
+sso_type: shibboleth-saml
+resources:
+  - <resource one>
+  - <resource two>
+auth_flow: >
+  The publisher's institutional-login page redirects to the university
+  Shibboleth/SAML discovery service, where the user authenticates. The agent
+  never stores credentials; missing sessions return AUTH_REQUIRED for a user
+  login.
+notes: >
+  Copy this file to institutions/<slug>.yaml and replace placeholders.
+  Confirm the discovery-service and entitlement details with the library.

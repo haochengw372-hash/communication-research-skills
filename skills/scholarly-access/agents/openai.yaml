@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scholarly Access"
+  short_description: "Legal five-layer full-text resolution and archiving"
+  default_prompt: "Use $scholarly-access to resolve full text for these papers, starting from a dry run and following the five-layer resolver policy."

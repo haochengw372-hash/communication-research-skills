@@ -1,0 +1,524 @@
+{
+  "schema_version": "codex-research-plan/v1",
+  "project_id": "demo-generic-survey-experiment",
+  "title": "Generic communication survey experiment lifecycle",
+  "archetype": "experiment",
+  "status": "proposed-not-authoritative",
+  "controller_rule": "Only the controller may accept this plan into project state",
+  "windows": [
+    {
+      "window_id": "C0",
+      "role": "controller",
+      "title": "Project controller",
+      "lifecycle": "long-lived",
+      "timing": "Open now",
+      "task_id": null,
+      "responsibilities": [
+        "maintain authoritative state",
+        "issue contracts",
+        "merge handoffs",
+        "freeze consequential definitions"
+      ]
+    },
+    {
+      "window_id": "W01",
+      "role": "executor",
+      "title": "Research question, theory, and contribution",
+      "lifecycle": "stage-bound",
+      "timing": "Open now",
+      "task_id": "question-theory",
+      "responsibilities": [
+        "Turn the topic into answerable questions, mechanisms, rival explanations, and contribution claims."
+      ]
+    },
+    {
+      "window_id": "W02",
+      "role": "executor",
+      "title": "Literature search and evidence map",
+      "lifecycle": "stage-bound",
+      "timing": "Open now",
+      "task_id": "literature-evidence",
+      "responsibilities": [
+        "Establish the verified evidence base, disagreements, boundary conditions, and unresolved gaps."
+      ]
+    },
+    {
+      "window_id": "W03",
+      "role": "executor",
+      "title": "Constructs and measurement",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "constructs-measurement",
+      "responsibilities": [
+        "Map every theoretical construct to observations and assess validity, reliability, and proxy limits."
+      ]
+    },
+    {
+      "window_id": "W04",
+      "role": "executor",
+      "title": "Design, sampling, and ethics",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "design-sampling-ethics",
+      "responsibilities": [
+        "Specify population, sample, timing, comparison, ethics, privacy, estimand, and analysis boundaries."
+      ]
+    },
+    {
+      "window_id": "W05",
+      "role": "executor",
+      "title": "Randomization and protocol",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "randomization-protocol",
+      "responsibilities": [
+        "Lock randomization, allocation, manipulation checks, outcomes, exclusions, power, and attrition handling."
+      ]
+    },
+    {
+      "window_id": "W06",
+      "role": "executor",
+      "title": "Data provenance and quality audit",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "data-audit",
+      "responsibilities": [
+        "Verify sources, units, keys, joins, missingness, exclusions, versions, and row transitions."
+      ]
+    },
+    {
+      "window_id": "W07",
+      "role": "executor",
+      "title": "Exploratory data analysis",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "exploratory-analysis",
+      "responsibilities": [
+        "Describe data quality and patterns without converting exploration into confirmatory evidence."
+      ]
+    },
+    {
+      "window_id": "W08",
+      "role": "executor",
+      "title": "Confirmatory estimation",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "confirmatory-model",
+      "responsibilities": [
+        "Estimate the locked estimand using the prespecified primary specification and diagnostics."
+      ]
+    },
+    {
+      "window_id": "W09",
+      "role": "executor",
+      "title": "Robustness and sensitivity",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "robustness-sensitivity",
+      "responsibilities": [
+        "Test plausible alternative specifications and threats without selecting results by significance."
+      ]
+    },
+    {
+      "window_id": "W10",
+      "role": "auditor",
+      "title": "Independent result audit",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "audit-results",
+      "responsibilities": [
+        "Independently verify sample, estimand, code, diagnostics, tables, and claim strength."
+      ]
+    },
+    {
+      "window_id": "W11",
+      "role": "executor",
+      "title": "Tables, figures, and result narrative",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "results-integration",
+      "responsibilities": [
+        "Create a consistent data-to-table-to-figure-to-text result chain."
+      ]
+    },
+    {
+      "window_id": "W12",
+      "role": "executor",
+      "title": "Manuscript integration",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "manuscript-integration",
+      "responsibilities": [
+        "Integrate the question, evidence, design, results, limitations, and contribution for the target audience."
+      ]
+    },
+    {
+      "window_id": "W13",
+      "role": "auditor",
+      "title": "Final manuscript and citation audit",
+      "lifecycle": "stage-bound",
+      "timing": "Open later",
+      "task_id": "audit-final",
+      "responsibilities": [
+        "Verify claim-source support, numerical consistency, reporting requirements, and completion evidence."
+      ]
+    }
+  ],
+  "work_packages": [
+    {
+      "task_id": "question-theory",
+      "title": "Research question, theory, and contribution",
+      "stage": "framing",
+      "role": "executor",
+      "depends_on": [],
+      "goal": "Turn the topic into answerable questions, mechanisms, rival explanations, and contribution claims.",
+      "deliverables": [
+        "research-question memo",
+        "mechanism map",
+        "rival explanations",
+        "feasibility risks"
+      ],
+      "skill_stack": [
+        "communication-theory"
+      ],
+      "rigor": "standard",
+      "audit_required": false,
+      "timing": "Open now",
+      "open_when": "Project boundary is recorded",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/question-theory/"
+      ]
+    },
+    {
+      "task_id": "literature-evidence",
+      "title": "Literature search and evidence map",
+      "stage": "evidence",
+      "role": "executor",
+      "depends_on": [],
+      "goal": "Establish the verified evidence base, disagreements, boundary conditions, and unresolved gaps.",
+      "deliverables": [
+        "search log",
+        "screening rules",
+        "evidence matrix",
+        "claim-support status"
+      ],
+      "skill_stack": [
+        "communication-literature"
+      ],
+      "rigor": "standard",
+      "audit_required": false,
+      "timing": "Open now",
+      "open_when": "Project boundary is recorded",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/literature-evidence/"
+      ]
+    },
+    {
+      "task_id": "constructs-measurement",
+      "title": "Constructs and measurement",
+      "stage": "design",
+      "role": "executor",
+      "depends_on": [
+        "question-theory",
+        "literature-evidence"
+      ],
+      "goal": "Map every theoretical construct to observations and assess validity, reliability, and proxy limits.",
+      "deliverables": [
+        "construct dictionary",
+        "operational definitions",
+        "validity threats"
+      ],
+      "skill_stack": [
+        "communication-construct",
+        "communication-scale"
+      ],
+      "rigor": "standard",
+      "audit_required": false,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/constructs-measurement/"
+      ]
+    },
+    {
+      "task_id": "design-sampling-ethics",
+      "title": "Design, sampling, and ethics",
+      "stage": "design",
+      "role": "executor",
+      "depends_on": [
+        "constructs-measurement"
+      ],
+      "goal": "Specify population, sample, timing, comparison, ethics, privacy, estimand, and analysis boundaries.",
+      "deliverables": [
+        "design protocol",
+        "sampling plan",
+        "ethics and data-governance checklist",
+        "definition lock candidate"
+      ],
+      "skill_stack": [
+        "communication-method-router"
+      ],
+      "rigor": "standard",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/design-sampling-ethics/"
+      ]
+    },
+    {
+      "task_id": "randomization-protocol",
+      "title": "Randomization and protocol",
+      "stage": "design",
+      "role": "executor",
+      "depends_on": [
+        "design-sampling-ethics"
+      ],
+      "goal": "Lock randomization, allocation, manipulation checks, outcomes, exclusions, power, and attrition handling.",
+      "deliverables": [
+        "experimental protocol",
+        "randomization plan",
+        "power analysis",
+        "analysis plan"
+      ],
+      "skill_stack": [
+        "communication-experiment",
+        "communication-scale"
+      ],
+      "rigor": "audit",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/randomization-protocol/"
+      ]
+    },
+    {
+      "task_id": "data-audit",
+      "title": "Data provenance and quality audit",
+      "stage": "data",
+      "role": "executor",
+      "depends_on": [
+        "randomization-protocol"
+      ],
+      "goal": "Verify sources, units, keys, joins, missingness, exclusions, versions, and row transitions.",
+      "deliverables": [
+        "data contract",
+        "schema and key audit",
+        "sample-flow table",
+        "variable dictionary"
+      ],
+      "skill_stack": [
+        "communication-experiment"
+      ],
+      "rigor": "standard",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/data-audit/"
+      ]
+    },
+    {
+      "task_id": "exploratory-analysis",
+      "title": "Exploratory data analysis",
+      "stage": "analysis",
+      "role": "executor",
+      "depends_on": [
+        "data-audit"
+      ],
+      "goal": "Describe data quality and patterns without converting exploration into confirmatory evidence.",
+      "deliverables": [
+        "EDA report",
+        "anomaly log",
+        "descriptive tables"
+      ],
+      "skill_stack": [
+        "communication-experiment"
+      ],
+      "rigor": "quick",
+      "audit_required": false,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/exploratory-analysis/"
+      ]
+    },
+    {
+      "task_id": "confirmatory-model",
+      "title": "Confirmatory estimation",
+      "stage": "analysis",
+      "role": "executor",
+      "depends_on": [
+        "data-audit"
+      ],
+      "goal": "Estimate the locked estimand using the prespecified primary specification and diagnostics.",
+      "deliverables": [
+        "model outputs",
+        "effect sizes and uncertainty",
+        "diagnostics",
+        "run log"
+      ],
+      "skill_stack": [
+        "communication-experiment"
+      ],
+      "rigor": "audit",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/confirmatory-model/"
+      ]
+    },
+    {
+      "task_id": "robustness-sensitivity",
+      "title": "Robustness and sensitivity",
+      "stage": "analysis",
+      "role": "executor",
+      "depends_on": [
+        "confirmatory-model"
+      ],
+      "goal": "Test plausible alternative specifications and threats without selecting results by significance.",
+      "deliverables": [
+        "robustness matrix",
+        "sensitivity results",
+        "scope-of-claim recommendation"
+      ],
+      "skill_stack": [
+        "communication-experiment",
+        "communication-reviewer"
+      ],
+      "rigor": "audit",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/robustness-sensitivity/"
+      ]
+    },
+    {
+      "task_id": "audit-results",
+      "title": "Independent result audit",
+      "stage": "audit",
+      "role": "auditor",
+      "depends_on": [
+        "confirmatory-model",
+        "robustness-sensitivity"
+      ],
+      "goal": "Independently verify sample, estimand, code, diagnostics, tables, and claim strength.",
+      "deliverables": [
+        "Critical/Major/Minor audit report",
+        "verdict",
+        "verified artifact hashes"
+      ],
+      "skill_stack": [
+        "communication-reviewer"
+      ],
+      "rigor": "audit",
+      "audit_required": false,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        ".codex-research/audits/audit-results/"
+      ]
+    },
+    {
+      "task_id": "results-integration",
+      "title": "Tables, figures, and result narrative",
+      "stage": "communication",
+      "role": "executor",
+      "depends_on": [
+        "audit-results"
+      ],
+      "goal": "Create a consistent data-to-table-to-figure-to-text result chain.",
+      "deliverables": [
+        "final tables",
+        "reproducible figures",
+        "result narrative",
+        "lineage check"
+      ],
+      "skill_stack": [
+        "communication-experiment",
+        "communication-reviewer"
+      ],
+      "rigor": "standard",
+      "audit_required": false,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/results-integration/"
+      ]
+    },
+    {
+      "task_id": "manuscript-integration",
+      "title": "Manuscript integration",
+      "stage": "writing",
+      "role": "executor",
+      "depends_on": [
+        "results-integration",
+        "literature-evidence"
+      ],
+      "goal": "Integrate the question, evidence, design, results, limitations, and contribution for the target audience.",
+      "deliverables": [
+        "claim map",
+        "manuscript draft",
+        "number and terminology inventory"
+      ],
+      "skill_stack": [
+        "communication-reviewer"
+      ],
+      "rigor": "standard",
+      "audit_required": true,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        "outputs/manuscript-integration/"
+      ]
+    },
+    {
+      "task_id": "audit-final",
+      "title": "Final manuscript and citation audit",
+      "stage": "audit",
+      "role": "auditor",
+      "depends_on": [
+        "manuscript-integration"
+      ],
+      "goal": "Verify claim-source support, numerical consistency, reporting requirements, and completion evidence.",
+      "deliverables": [
+        "final audit report",
+        "citation-support matrix",
+        "submission readiness verdict"
+      ],
+      "skill_stack": [
+        "communication-reviewer",
+        "communication-literature"
+      ],
+      "rigor": "audit",
+      "audit_required": false,
+      "timing": "Open later",
+      "open_when": "All dependencies are accepted by the controller",
+      "close_when": "Deliverables, fresh verification, and an immutable handoff are accepted",
+      "write_scope": [
+        ".codex-research/audits/audit-final/"
+      ]
+    }
+  ],
+  "decision_points": [
+    "primary research question or theoretical contribution changes",
+    "construct, source-of-truth, sample, key, or time window changes",
+    "estimand or identification strategy changes",
+    "external write or final submission is proposed"
+  ]
+}

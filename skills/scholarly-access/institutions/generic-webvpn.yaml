@@ -1,0 +1,15 @@
+name: <University Name>
+homepage: <library homepage URL>
+sso_type: webvpn
+resources:
+  - <resource one>
+  - <resource two>
+auth_flow: >
+  The user opens the campus WebVPN portal and authenticates with the
+  university account or QR code; authenticated resources are then reachable
+  through the portal session. The agent never stores credentials; missing
+  sessions return AUTH_REQUIRED for a user login.
+notes: >
+  Copy this file to institutions/<slug>.yaml and replace placeholders.
+  WebVPN coverage is limited to resources the institution routes through the
+  portal.

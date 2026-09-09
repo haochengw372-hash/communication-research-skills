@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Writing"
+  short_description: "Evidence-bound communication and social-science manuscript writing"
+  default_prompt: "Use $communication-writing to build or revise this communication manuscript from verified evidence, preserve claim boundaries, and synchronize all affected sections."

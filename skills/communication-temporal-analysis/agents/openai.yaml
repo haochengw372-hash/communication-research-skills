@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Temporal Analysis"
+  short_description: "Time series, panels, event history, sequences, and dynamics"
+  default_prompt: "Use $communication-temporal-analysis to define the temporal process, select a dynamic method, audit dependence and missingness, and bound the time-based claim."

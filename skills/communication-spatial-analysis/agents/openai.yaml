@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Spatial Analysis"
+  short_description: "GIS, geocoding, spatial dependence, diffusion, and map validity"
+  default_prompt: "Use $communication-spatial-analysis to lock the geographic unit, audit geocoding and spatial dependence, choose the method, and bound ecological claims."

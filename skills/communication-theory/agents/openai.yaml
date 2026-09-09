@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Theory"
+  short_description: "Audit theory-mechanism fit and rival explanations"
+  default_prompt: "Use $communication-theory to run the Theory Gate on this mechanism claim and return defensible anchors and rival explanations."

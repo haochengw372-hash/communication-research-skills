@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Method Router"
+  short_description: "Goal-first research method selection"
+  default_prompt: "Use $communication-method-router to classify this research goal and select the smallest sufficient method family before any analysis design."

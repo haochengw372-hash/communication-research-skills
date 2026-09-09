@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communication Simulation"
+  short_description: "ABM and LLM-agent mechanisms, calibration, validation, sensitivity"
+  default_prompt: "Use $communication-simulation to specify the micro-macro mechanism, calibration data, simulation experiments, validation targets, and claim boundaries."
