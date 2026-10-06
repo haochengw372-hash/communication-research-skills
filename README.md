@@ -1,6 +1,6 @@
-# Communication Research Skills for Codex
-
 > 使用请引用 / Please cite: Haocheng Wang (2026), *Communication Research Skills for Codex*. https://github.com/haochengw372-hash/communication-research-skills. Machine-readable citation: [`CITATION.cff`](CITATION.cff). Citation is requested as an academic courtesy, not an additional license condition.
+
+# Communication Research Skills for Codex
 
 A maintainable Codex Skill suite for communication research and computational communication studies (计算传播学). It differs from general CS or social-science packages by routing research through a communication reasoning graph — phenomenon, literature, theory, construct, mechanism, RQ/H, operationalization, measurement, design, evidence, and theoretical contribution — and by enforcing seven domain gates.
 
