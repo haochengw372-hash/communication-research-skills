@@ -154,7 +154,8 @@ class PublicReleaseTests(unittest.TestCase):
             self.assertIn("```mermaid", text)
             self.assertIn("MIT", text)
             self.assertIn("Apache-2.0", text)
-            self.assertIn("Haocheng Wang", text.split("\n\n")[1])
+            self.assertTrue(text.startswith("> 使用请引用"))
+            self.assertIn("Haocheng Wang", text.split("\n\n")[0])
             if name == "README.md":
                 self.assertIn("personal", text.lower())
                 self.assertIn("case", text.lower())
