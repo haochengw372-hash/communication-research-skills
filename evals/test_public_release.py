@@ -18,6 +18,7 @@ class PublicReleaseTests(unittest.TestCase):
             "README.zh-CN.md",
             "LICENSE",
             "NOTICE.md",
+            "CITATION.cff",
             "VERSION",
             ".gitignore",
             "scripts/install.sh",
@@ -152,12 +153,27 @@ class PublicReleaseTests(unittest.TestCase):
             self.assertIn("$communication-research-workflow", text)
             self.assertIn("```mermaid", text)
             self.assertIn("MIT", text)
+            self.assertIn("Apache-2.0", text)
+            self.assertIn("Haocheng Wang", text.split("\n\n")[1])
             if name == "README.md":
                 self.assertIn("personal", text.lower())
                 self.assertIn("case", text.lower())
             else:
                 self.assertIn("私人", text)
                 self.assertIn("案例", text)
+
+    def test_license_and_citation_keep_upstream_attribution(self):
+        license_text = (ROOT / "LICENSE").read_text(encoding="utf-8")
+        notice = (ROOT / "NOTICE.md").read_text(encoding="utf-8")
+        citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        self.assertIn("Apache License", license_text)
+        self.assertIn("Version 2.0, January 2004", license_text)
+        self.assertIn("Copyright (c) 2026 Codex Research Workflow contributors", notice)
+        self.assertIn("Permission is hereby granted, free of charge", notice)
+        self.assertIn("not an additional condition", notice)
+        self.assertIn("family-names: Wang", citation)
+        self.assertIn("given-names: Haocheng", citation)
+        self.assertIn("license: Apache-2.0", citation)
 
     def test_public_demo_is_project_agnostic(self):
         removed_project_artifacts = [

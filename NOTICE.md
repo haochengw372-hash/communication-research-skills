@@ -28,4 +28,39 @@ implementation. The projects above informed its evidence-led writing, manuscript
 revision-ledger, and independent-audit architecture; their text and scripts were not
 copied.
 
-This repository is distributed under the MIT License (see `LICENSE`).
+## Scholar attribution and license
+
+Communication Research Skills for Codex
+Copyright 2026 Haocheng Wang
+
+Original contributions by Haocheng Wang are licensed under Apache-2.0 (see
+`LICENSE`). The upstream-derived material identified above retains its MIT
+copyright and permission notice below. Methodological references keep their own
+licenses; this change does not relicense those projects.
+
+The README citation request is an academic courtesy, not an additional condition
+of the Apache-2.0 license.
+
+## Retained upstream MIT notice
+
+MIT License
+
+Copyright (c) 2026 Codex Research Workflow contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

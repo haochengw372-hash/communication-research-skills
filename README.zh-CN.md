@@ -1,5 +1,7 @@
 # Communication Research Skills for Codex（计算传播学版）
 
+> 使用请引用：Haocheng Wang (2026). *Communication Research Skills for Codex*. https://github.com/haochengw372-hash/communication-research-skills。机器可读引用信息见 [`CITATION.cff`](CITATION.cff)。引用属于学术署名请求，不是 Apache-2.0 的额外使用条件。
+
 面向传播学与计算传播学研究的可维护 Codex Skill 套件。它和通用 CS / 计算社科 / 生物类科研 Skill 的区别在于：所有研究请求都先经过一条传播学推理链——现象 → 文献 → 理论 → 构念 → 机制 → RQ/H → 操作化 → 测量 → 设计/识别 → 证据 → 理论贡献——并强制执行七道领域门禁。
 
 ## 套件内容
@@ -105,4 +107,5 @@ research-project/
 
 ## 许可证
 
-MIT。上游署名与方法学启发来源见 `LICENSE` 与 `NOTICE.md`。
+Haocheng Wang 的原创贡献采用 Apache-2.0。上游衍生部分保留原 MIT
+版权及许可声明，具体范围、署名与方法学启发来源见 `LICENSE` 与 `NOTICE.md`。
